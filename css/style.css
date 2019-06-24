@@ -1,0 +1,59 @@
+body {
+    background-color: #ffffff;
+}
+h3 {
+    font-size: 25px;
+}
+
+.fab {
+    font-size: 25px;
+    color: #000000;
+    padding: 0px 10px 0px 10px;
+    
+}
+.fab:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.footer {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+.info-box {
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.d-block {
+    padding-top: 20px ;
+    
+}
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-bottom: 7px solid #515353;
+}
+
+.navbar-brand {
+    padding: 20px 0px 20px 0px;
+    margin-left: 20%;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    text-align: center;
+}
+.navbar-nav {
+    margin-left: 30%;
+    text-align: center;
+}
+
+.nav-item {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.jumbotron-fluid {
+    height: 90vh;
+}
