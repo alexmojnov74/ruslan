@@ -5,9 +5,107 @@ h3 {
     font-size: 25px;
 }
 
+
+/* Main Styles */
+
+.jumbotron {
+    padding: 0px;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    padding-top: 2%;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+/* MainStyles End */
+
+/* Navigation Bar Styles */
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    
+}
+
+.navbar-light .navbar-toggler {
+    
+    margin-left: 37%;
+    border: 1px solid black;
+    padding: 5px 25px;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 5px 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: red;
+}
+.navbar-brand {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-item {
+    text-align: center;
+}
+
+/* Navbar styles end */
+
+
+/* Carousel Items */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/* End Carousel Items */
+
+.card-body {
+    padding: 0px;
+}
+.col-md-4 {
+    padding: 0px;
+}
+/* Footer Items */
+
 .fab {
     font-size: 25px;
-    color: #000000;
+    color:red;
     padding: 0px 10px 0px 10px;
     
 }
@@ -15,7 +113,6 @@ h3 {
     text-decoration: none;
     color: blueviolet;
 }
-
 .footer {
     padding-top: 20px;
     margin: auto;
@@ -25,35 +122,4 @@ h3 {
     padding-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
-}
-
-.d-block {
-    padding-top: 20px ;
-    
-}
-.navbar {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    border-bottom: 7px solid #515353;
-}
-
-.navbar-brand {
-    padding: 20px 0px 20px 0px;
-    margin-left: 20%;
-    font-family: 'Cinzel', serif;
-    font-size: 40px;
-    text-align: center;
-}
-.navbar-nav {
-    margin-left: 30%;
-    text-align: center;
-}
-
-.nav-item {
-    margin-left: 10%;
-    text-align: center;
-}
-
-.jumbotron-fluid {
-    height: 90vh;
 }
