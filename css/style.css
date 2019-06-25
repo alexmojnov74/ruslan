@@ -2,17 +2,12 @@ body {
     background-color: #ffffff;
 }
 h3 {
-    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
 }
 
 
 /* Main Styles */
-
-.jumbotron {
-    padding: 0px;
-    height: 100vh;
-    background-color: #ffffff;
-}
 
 .container {
     padding-top: 2%;
@@ -21,22 +16,41 @@ h3 {
     padding-right: 0px;
     text-align: center;
 }
+.container-fluid {
+    padding: 0px;
+    
+}
 
 /* MainStyles End */
+
+/* Carusel */
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.col-md-3 {
+    padding:0;
+}
+
+
 
 /* Navigation Bar Styles */
 
 .navbar {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     
 }
-
 .navbar-light .navbar-toggler {
     
-    margin-left: 37%;
+    margin-left: 42%;
     border: 1px solid black;
-    padding: 5px 25px;
+    
+    float: left;
 }
 .navbar-light .navbar-nav .nav-link {
     padding: 5px 15px;
@@ -46,10 +60,8 @@ h3 {
 }
 .navbar-brand {
     font-family: 'Cinzel', serif;
-    font-size: 40px;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+    font-size: 200%;
+    
 }
 .nav-item {
     text-align: center;
@@ -59,12 +71,12 @@ h3 {
 
 
 /* Carousel Items */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
     .carousel-inner .carousel-item > div:first-child {
-        display: block;
+        display: flex;
     }
 }
 
@@ -75,12 +87,16 @@ h3 {
 }
 
 /* display 3 */
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.333%);
-    }
+      -webkit-transform: translateX(33.333%);
+      -moz-transform: translateX(33.333%);
+      -ms-transform: translateX(33.333%);
+      -o-transform: translateX(33.333%);
+}
     
     .carousel-inner .carousel-item-left.active, 
     .carousel-inner .carousel-item-prev {
@@ -95,12 +111,9 @@ h3 {
 
 /* End Carousel Items */
 
-.card-body {
-    padding: 0px;
-}
-.col-md-4 {
-    padding: 0px;
-}
+
+
+
 /* Footer Items */
 
 .fab {
@@ -123,3 +136,5 @@ h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
 }
+
+
