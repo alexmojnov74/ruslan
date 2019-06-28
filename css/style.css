@@ -1,24 +1,61 @@
 body {
     background-color: #ffffff;
 }
-h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    
 }
 
+h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+}
+h2 {font-family: 'Cinzel', serif;
+    font-size: 50%;}
 
+p {
+    
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
 /* Main Styles */
-
-.container {
+.fluid {
+    padding: 0px;
+}
+.contnav {
     padding-top: 2%;
     padding-bottom: 30px;
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
 }
-.container-fluid {
+.contmain {
+    background-color: blue;
+}
+
+.colmd1 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.col-sm {
     padding: 0px;
-    
+}
+/* .col-sm-4 {
+    padding: 20px 0px 0px 0px;
+} */
+/* .col-sm-5 {
+    padding: 20px 0px 0px 0px;
+} */
+.mx-left {
+    border-radius: 10px 0px 10px 0px;
+    -webkit-border-radius: 10px 0px 10px 0px;
+    -moz-border-radius: 10px 0px 10px 0px;
+    -ms-border-radius: 10px 0px 10px 0px;
+    -o-border-radius: 10px 0px 10px 0px;
 }
 
 /* MainStyles End */
@@ -43,13 +80,13 @@ h3 {
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    margin: auto;
     
 }
 .navbar-light .navbar-toggler {
     
     margin-left: 42%;
     border: 1px solid black;
-    
     float: left;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -58,25 +95,50 @@ h3 {
 .navbar-light .navbar-nav .nav-link:hover {
     color: red;
 }
-.navbar-brand {
+.navbrand {
     font-family: 'Cinzel', serif;
-    font-size: 200%;
+    font-size: 250%;
     
 }
 .nav-item {
     text-align: center;
 }
-
 /* Navbar styles end */
 
 
 /* Carousel Items */
-@media (max-width: 760px) {
+
+.fa-chevron-left {
+    padding-left: 30px;
+    font-size: 50px;
+    background-color: black;
+    opacity: 0.5;
+   
+}
+.fa-chevron-right {
+    padding-right: 30px;
+    font-size: 50px;
+    background-color: black;
+    opacity: 0.5;
+   
+}
+
+
+
+@media (max-width: 850px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
     .carousel-inner .carousel-item > div:first-child {
         display: flex;
+    }
+    .navbar-brand {
+        padding-left: 23%;
+        font-size: 200%;
+    }
+    h3 {
+        font-family: 'Cinzel', serif;
+        font-size: 22px;
     }
 }
 
@@ -86,28 +148,77 @@ h3 {
     display: flex;
 }
 
+
+
+
 /* display 3 */
 @media (min-width: 760px) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(33.333%);
-      -webkit-transform: translateX(33.333%);
-      -moz-transform: translateX(33.333%);
-      -ms-transform: translateX(33.333%);
-      -o-transform: translateX(33.333%);
+      transform: translateX(25%);
+      -webkit-transform: translateX(25%);
+      -moz-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+      -o-transform: translateX(25%);
 }
     
     .carousel-inner .carousel-item-left.active, 
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.333%);
-    }
+      transform: translateX(-25%);
+      -webkit-transform: translateX(-25%);
+      -moz-transform: translateX(-25%);
+      -ms-transform: translateX(-25%);
+      -o-transform: translateX(-25%);
+}
+    
 }
 
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
+
+@media (max-width: 450px) {
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: inline;
+    }
+
+.navbar-brand {
+    padding-left: 18%;
+    font-size: 200%;
+}
+h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+}
+}
+
+.mobilescreen{
+    display:none;
+}
+
+
+
+
+/* If the screen size is 760px wide or less*/
+@media only screen and (max-width: 760px) {
+   /* hiding  fullscreen div in mobile */
+    .fullscreen {
+      display: none;
+    }
+    /* displaying mobilescreen in mobile */
+    .mobilescreen {
+        display: unset;
+    }
+    .col-md-6 {
+        padding: 10px 0px 0px 0px;
+    }
+    
+  }
 
 /* End Carousel Items */
 
