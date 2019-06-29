@@ -8,14 +8,12 @@ h1 {
     padding-top: 10px;
     
 }
-
 h3 {
     font-family: 'Cinzel', serif;
     font-size: 25px;
 }
 h2 {font-family: 'Cinzel', serif;
     font-size: 50%;}
-
 p { 
     font-family: 'Heebo', sans-serif;
     text-align: justify;
@@ -53,29 +51,23 @@ li {font-family: 'Heebo', sans-serif;
     -ms-border-radius: 10px 0px 10px 0px;
     -o-border-radius: 10px 0px 10px 0px;
 }
-
 /* MainStyles End */
-
 /* Carusel */
 .card {
     border: none;
 }
-
 .card-body {
     padding: 0px;
 }
-
 .col-md-3 {
     padding:0;
 }
-
-
-
 /* Navigation Bar Styles */
-
 .navbar {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;   
+    font-size: 15px;
+    margin: auto;
+    
 }
 .navbar-light .navbar-toggler {
     
@@ -92,30 +84,24 @@ li {font-family: 'Heebo', sans-serif;
 .navbrand {
     font-family: 'Cinzel', serif;
     font-size: 300%;
-    /* margin-left: 5%; */
+    margin-left: 5%;
      
 }
 .nav-item {
     text-align: center;
 }
 /* Navbar styles end */
-
-
 /* Carousel Items */
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex;
 }
-
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
 /* End Carousel Items */
-
-
-
 .fa-chevron-left {
     padding-left: 30px;
     font-size: 50px;
@@ -130,13 +116,14 @@ li {font-family: 'Heebo', sans-serif;
     opacity: 0.5;
    
 }
-
-
-
+.mobilescreen{
+    display: none;
+}
 @media (max-width: 1200px) {
-    .carousel-inner .carousel-item > div {
+    /* .carousel-inner .carousel-item > div {
         display: none;
-    }
+    } */
+    
     .carousel-inner .carousel-item > div:first-child {
         display: flex;
     }
@@ -151,12 +138,18 @@ li {font-family: 'Heebo', sans-serif;
         padding: 0px 0px 10px 0px;
         margin-left: 17%; 
     }
-    .mobilescreen{
-        display:none;
-    }
-    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+      -webkit-transform: translateX(25%);
+      -moz-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+      -o-transform: translateX(25%);
 }
-
+.mobilescreen{
+    display: none;
+}
+}
 /* display 3 */
 @media (max-width: 850px) {
     
@@ -180,20 +173,19 @@ li {font-family: 'Heebo', sans-serif;
 .navbrand {
     font-family: 'Cinzel', serif;
     font-size: 200%;
-    padding: 0px 0px 10px 0px;     
+    padding: 0px 0px 10px 0px;
+      
 }
 .mobilescreen{
-    display:none;   
+    display: none;
 }
 }
 @media (max-width: 650px) {
-
     .carousel-inner .carousel-item.active,
     .carousel-inner .carousel-item-next,
     .carousel-inner .carousel-item-prev {
         display: inline;
     }
-
 h3 {
     font-family: 'Cinzel', serif;
     font-size: 22px;
@@ -203,7 +195,6 @@ h3 {
     font-size: 200%;
     padding: 0px 0px 10px 0px;       
 }
-
 .mobilescreen{
     display:none;
 }
@@ -220,7 +211,6 @@ h3 {
     .col-md-6 {
         padding: 10px 0px 0px 0px;
     }
-
     .navbrand {
         font-family: 'Cinzel', serif;
         font-size: 210%; 
@@ -228,14 +218,7 @@ h3 {
     }
     
   }
-
-
-
-
-
-
 /* Footer Items */
-
 .fab {
     font-size: 25px;
     color:red;
@@ -255,6 +238,23 @@ h3 {
     padding-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
+}
+ 
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33.333%);
+  -webkit-transform: translateX(33.333%);
+  -moz-transform: translateX(33.333%);
+  -ms-transform: translateX(33.333%);
+  -o-transform: translateX(33.333%);
+}
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33.333%);
+}
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+transform: translateX(0);
 }
 
 
