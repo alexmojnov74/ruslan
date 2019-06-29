@@ -36,14 +36,14 @@
     <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" href="#">ABOUT</a>
+    <a class="nav-link" href="about.html">ABOUT</a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="#">GALLERY</a>
     </li>
 
     <li class="nav-item">
-    <a class="nav-link" href="contact.html">BOOKING</a>
+    <a class="nav-link" href="#">BOOKING</a>
     </li>
     </ul>
     </nav>
@@ -56,36 +56,26 @@
     <div class="col-md-12">
         <div class="row">
             <div class="col-md">
-            <div class="image-wrapper">
-    <img class="img-fluid" src="images/ruslan.jpg" style: width="550px", height="700px">
-            </div>
-            </div>
-            <div class="col-md-1"></div>
-            
-            <div class="col-md">
 
-    <h1>About</h1>
+
+<section class="resume-section" id="contact">
+<div class="my-auto">
+                
+    <ul class="fa-ul mb-4 ml-8">
     
-    
-    <br>
-    <p>Hello,
-        My name is Ruslan Spoyalo, I’m a Professional Wedding, Family and portrait Photographer residing in Los Angeles, CA.
-        <br> 
-        I have fully equipt Studio in Korea Town, Los Angeles and I offer the following professional services:
-        <br>
-        <br>
-         
-        <p>&#9884 Personal Portraits</p>
-        <p>&#9884Family Photorgraphs</p>
-        <p>&#9884Modeling and much more …</p>
-        
-        </p>    
-   
-    <br>
-    <p>My photos are not about just pictures – but all about people. Every person provides a different prospective of the world as a whole in stories. These stories can be all types of emotions, and I am loving every one of them because they are all unique!
-    <br>
-    <br>     
-    Please feel free to contact me and ask any questions you may have!</p>    
+    <li>
+        <i class="fas fa-mobile-alt mr-2 contact-icons"></i>+1 322 555 5555 
+    </li>
+    <li>
+        <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>Los Angeles, CA
+    </li>
+    </ul>
+ </section>
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -112,43 +102,14 @@
 </div>
 
 </div>
-
-
-
-
-
-    
+  
 <script>
-
-$(document).ready(function(){
-$('#recipeCarousel').carousel({
-  interval: 5000
-})
-
-$('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-          next.children(':first-child').clone().appendTo($(this));
-      }
+ $(function() {
+    $('#datetimepicker1').datetimepicker({
+      language: 'pt-BR'
     });
-});
-
-
+  });
 </script>     
-
-
-
 
 
 <script src="javascript/main.js"></script>    
