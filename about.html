@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Ruslan Spoyalo Photographer</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="container contnav">
+    <nav class="navbar justify-content-center navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand navbrand" href="#">Ruslan Spoyalo
+    <br> <h3>&#8213 Photographer &#8213</h3>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mr-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">ABOUT</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">GALLERY</a>
+    </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">BOOKING</a>
+    </li>
+    </ul>
+    </nav>
+</div>
+<!-- End Navigation Bar -->
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md">
+            <div class="image-wrapper">
+    <img class="img-fluid" src="images/ruslan.jpg" style: width="550px", height="700px">
+            </div>
+            </div>
+            <div class="col-md-1"></div>
+            
+            <div class="col-md">
+
+    <h1>About</h1>
+    
+    
+    <br>
+    <p>Hello,
+        My name is Ruslan Spoyalo, I’m a Professional Wedding, Family and portrait Photographer residing in Los Angeles, CA.
+        <br> 
+        I have fully equipt Studio in Korea Town, Los Angeles and I offer the following professional services:
+        <br>
+        <br>
+         
+        <p>&#9884 Personal Portraits</p>
+        <p>&#9884Family Photorgraphs</p>
+        <p>&#9884Modeling and much more …</p>
+        
+        </p>    
+   
+    <br>
+    <p>My photos are not about just pictures – but all about people. Every person provides a different prospective of the world as a whole in stories. These stories can be all types of emotions, and I am loving every one of them because they are all unique!
+    <br>
+    <br>     
+    Please feel free to contact me and ask any questions you may have!</p>    
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- End main content -->
+
+<footer>
+    
+    <div class="footer">
+    <!-- <a href="https://twitter.com" target="new" class="fab fa-twitter"></a>
+    <a href="http://facebook.com" target="new" class="fab fa-facebook fa-3x"></a>
+    <a href="https://www.linkedin.com" target="new" class="fab fa-linkedin fa-3x"></a> -->
+    <a href="http://instagram.com" class="fab fa-instagram fa-3x"></a>
+    <div class="info-box">
+    <div class="footnote">RUSLAN SPOYALO <span class="highlight">©2019</span></div>
+    </div>
+    </div>  
+    
+</footer>    
+
+</div>
+
+</div>
+
+
+
+
+
+    
+<script>
+
+$(document).ready(function(){
+$('#recipeCarousel').carousel({
+  interval: 5000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+          next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+});
+
+
+</script>     
+
+
+
+
+
+<script src="javascript/main.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
