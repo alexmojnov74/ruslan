@@ -91,7 +91,6 @@ li {font-family: 'Heebo', sans-serif;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-
 .submit {
     width: 100%;
     height: 50px;
@@ -115,7 +114,6 @@ li {font-family: 'Heebo', sans-serif;
     
 }
 .navbar-light .navbar-toggler {
-    
     margin-left: 42%;
     border: 1px solid black;
     float: left;
@@ -126,11 +124,7 @@ li {font-family: 'Heebo', sans-serif;
 .navbar-light .navbar-nav .nav-link:hover {
     color: red;
 }
-.navbrand {
-    font-family: 'Cinzel', serif;
-    font-size: 300%;
-    margin-left: 5%;
-}
+
 .nav-item {
     text-align: center;
 }
@@ -142,9 +136,15 @@ li {font-family: 'Heebo', sans-serif;
     display: flex;
 }
 .carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
+.carousel-inner .carousel-item-left{
   transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
+
+
 /* End Carousel Items */
 .fa-chevron-left {
     padding-left: 30px;
@@ -249,12 +249,7 @@ h3 {
     font-family: 'Cinzel', serif;
     font-size: 22px;
 }
-.navbrand {
-    font-family: 'Cinzel', serif;
-    font-size: 200%;
-    padding: 0px 0px 10px 0px;
-    margin-left: 15%;       
-}
+
 .mobilescreen{
     display:none;
 }
@@ -286,10 +281,8 @@ h3 {
         float: left;
     }
     .navbrand {
-        font-family: 'Cinzel', serif;
-        font-size: 200%;
         padding: 0px 0px 10px 0px;
-        margin-left: 16%;       
+        margin-left: 10%;       
     }
   }
 /* Footer Items */
@@ -304,9 +297,9 @@ h3 {
     color: blueviolet;
 }
 .footer {
-    padding-top: 20px;
-    margin: auto;
-    text-align: center;
+    padding-top: 50px;
+    margin-left: 300px;
+    text-align: left;
 }
 .info-box {
     padding-top: 20px;
