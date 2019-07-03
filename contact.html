@@ -18,69 +18,112 @@
 <body>
 <!-- Navigation Bar -->
 <div class="container contnav">
-    <nav class="navbar navbar-expand-lg navbar-light">
-
-    <a class="navbar-brand navbrand" href="#">Ruslan Spoyalo
-    <br> <h3>&#8213 Photographer &#8213</h3>
-    </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto mr-auto">
-    <li class="nav-item active">
-    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="about.html">ABOUT</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">GALLERY</a>
-    </li>
-
-    <li class="nav-item">
-    <a class="nav-link" href="#">BOOKING</a>
-    </li>
-    </ul>
-    </nav>
-</div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+    
+        <a class="navbar-brand navbrand" href="#">Ruslan Spoyalo
+        <br> <h3>&#8213 Photographer &#8213</h3>
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">GALLERY</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="#">BOOKING</a><span class="sr-only">(current)</span>
+        </li>
+        </ul>
+        </nav>
+    </div>
 <!-- End Navigation Bar -->
 
 <!-- Main Content -->
-<div class="container">
-    <div class="row">
-    <div class="col-md-12">
+<div class="container contnav">
+    
+    <div class="jumbotron form">
+    <form>
         <div class="row">
             <div class="col-md">
+        <label class="lable">Name:</label><br>
+        <input class="input" type="text" name="name" placeholder=" First name.."><br>
+            </div>
+            <div class="col-md">
+        <label class="lable">Last Name:</label><br>
+        <input class="input" type="text" name="name" placeholder=" Last Name.."><br>
+        </div>
+        </div>
 
-
-<section class="resume-section" id="contact">
-<div class="my-auto">
-                
-    <ul class="fa-ul mb-4 ml-8">
+    <div class="row">
+    <div class="col-md">
+        
+        <label class="lable1">Email:</label><br>
+        <input class="input" class="input" type="text" name="email" placeholder=" Your email.."> <br>
+    </div>
+    <div class="col-md">
+    <label class="lable1">Telephone:</label><br>
+    <input class="input" type="tel" name="phone" placeholder=" 555 555 5555"><br>
+    </div>
+    </div>
     
+    <div class="row">
+        <div class="col-md">
+            <label class="lable1">Type of Service:</label><br>
+            <select name="service" id="dropdown">
+                <option value="other">Other</option>
+                <option value="portrait">Portrait</option>
+                <option value="wedding">Wedding</option>
+                <option value="commercil">Commercial</option>
+            </select> 
+        </div>
+        <div class="col-md">
+            <!-- <label>Date of Service:</label><br>
+            <input type="date" name="date" > -->
+        </div>
+        <div class="col-md">
+        <!-- <label>Time of Service:</label><br>
+        <input type="time" name="time" > -->
+        </div>
+            </div>    
+        <label class="lable1">Message:</label><br>
+        <textarea class="text" name="message" rows="3" cols="128" placeholder=" Tell me what you need"></textarea><br><br>
+
+        <button class="btn btn-primary submit">Submit</button><br>
+
+    </form>
+</div>
+    
+    
+    
+    
+    
+    <div class="row colmd12">
+    <div class="col-md-12 colmd12">
+           
+    <ul class="fa-ul">
     <li>
-        <i class="fas fa-mobile-alt mr-2 contact-icons"></i>+1 322 555 5555 
+    <i class="fas fa-mobile-alt mr-2 contact-icons"></i>+1 322 555 5555 
     </li>
     <li>
-        <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>Los Angeles, CA
+    <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>Los Angeles, CA
     </li>
     </ul>
- </section>
-
-
-
-
-
-            </div>
-        </div>
     </div>
     </div>
 </div>
+ 
 
 
 <!-- End main content -->
@@ -104,11 +147,7 @@
 </div>
   
 <script>
- $(function() {
-    $('#datetimepicker1').datetimepicker({
-      language: 'pt-BR'
-    });
-  });
+ 
 </script>     
 
 
