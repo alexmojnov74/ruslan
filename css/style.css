@@ -285,6 +285,12 @@ h3 {
         border: 1px solid black;
         float: left;
     }
+    .navbrand {
+        font-family: 'Cinzel', serif;
+        font-size: 200%;
+        padding: 0px 0px 10px 0px;
+        margin-left: 17%;       
+    }
   }
 /* Footer Items */
 .fab {
