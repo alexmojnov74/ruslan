@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -17,10 +18,10 @@
 </head>
 <body>
 <!-- Navigation Bar -->
-<div class="container contnav">
+<div class="container contnav animated fadeInDown">
         <nav class="navbar navbar-expand-lg navbar-light">
     
-        <a class="navbar-brand navbrand" href="#">
+        <a class="navbar-brand navbrand" href="index.html">
             <img id="logo" class="d-inline-block img-fluid" alt="Logo" src="images/logo.jpg">
         </a>
     
@@ -51,9 +52,11 @@
 <!-- End Navigation Bar -->
 
 <!-- Main Content -->
-<div class="container contnav">
+<div class="container">
     
-    <div class="jumbotron form">
+    <div class="jumbotron form animated fadeInUp">
+        <h1 style="text-align: center">Booking/Inquiries</h1>
+        <br>
     <form>
         <div class="row">
             <div class="col-md">
@@ -82,16 +85,16 @@
         <div class="col-md">
             <label class="lable1">Type of Service:</label><br>
             <select name="service" id="dropdown">
-                <option value="other">Other</option>
-                <option value="portrait">Portrait</option>
-                <option value="wedding">Wedding</option>
-                <option value="commercil">Commercial</option>
+                <option value="other">Portrait</option>
+                <option value="portrait">Wedding</option>
+                <option value="wedding">Commercial</option>
+                <option value="commercil">Other</option>
             </select> 
         </div>
-        <div class="col-md">
-            <!-- <label>Date of Service:</label><br>
-            <input type="date" name="date" > -->
-        </div>
+        <!-- <div class="col-md">
+            <label>Date of Service:</label><br>
+            <input type="date" name="date" >
+        </div> -->
         <div class="col-md">
         <!-- <label>Time of Service:</label><br>
         <input type="time" name="time" > -->
@@ -103,12 +106,7 @@
         <button class="btn btn-primary submit">Submit</button><br>
 
     </form>
-</div>
-    
-    
-    
-    
-    
+
     <div class="row colmd12">
     <div class="col-md-12 colmd12">
            
@@ -123,7 +121,7 @@
     </div>
     </div>
 </div>
- 
+</div>
 
 
 <!-- End main content -->
@@ -134,10 +132,10 @@
     <!-- <a href="https://twitter.com" target="new" class="fab fa-twitter"></a>
     <a href="http://facebook.com" target="new" class="fab fa-facebook fa-3x"></a>
     <a href="https://www.linkedin.com" target="new" class="fab fa-linkedin fa-3x"></a> -->
-    <a href="http://instagram.com" class="fab fa-instagram fa-3x"></a>
-    <div class="info-box">
+    <a href="http://instagram.com" class="fab fa-instagram fa-3x" target="new"></a>
+    <!-- <div class="info-box">
     <div class="footnote">RUSLAN SPOYALO <span class="highlight">©2019</span></div>
-    </div>
+    </div> -->
     </div>  
     
 </footer>    

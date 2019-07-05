@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -16,10 +17,10 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-<div class="container contnav">
+<div class="container contnav animated fadeInDown">
     <nav class="navbar navbar-expand-lg navbar-light">
 
-    <a class="navbar-brand navbrand" href="#">
+    <a class="navbar-brand navbrand" href="index.html">
         <img id="logo" class="d-inline-block img-fluid" alt="Logo" src="images/logo.jpg"> 
     </a>
 
@@ -42,7 +43,7 @@
     </li>
 
     <li class="nav-item">
-    <a class="nav-link" href="#">BOOKING</a>
+    <a class="nav-link" href="contact.html">BOOKING</a>
     </li>
     </ul>
     </nav>
@@ -50,7 +51,7 @@
 <!-- End Navigation Bar -->
 
 <!-- Carusel -->
-<div class="fullscreen">
+<div class="fullscreen animated fadeInUp">
 <div class="container-fluid fluid">
 
 <div class="row no-gutters mx-auto my-auto align-items-center">
@@ -200,11 +201,11 @@
 </div>
 
     <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            <img class="img-fluid chevron" src="images/chevleft.gif"/>
         <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            <img class="img-fluid chevron" src="images/chevright.gif"/>
         <span class="sr-only">Next</span>
     </a>
     </div>
@@ -300,7 +301,7 @@
     <!-- <a href="https://twitter.com" target="new" class="fab fa-twitter"></a>
     <a href="http://facebook.com" target="new" class="fab fa-facebook fa-3x"></a>
     <a href="https://www.linkedin.com" target="new" class="fab fa-linkedin fa-3x"></a> -->
-    <a href="http://instagram.com" class="fab fa-instagram fa-3x"></a>
+    <a href="http://instagram.com" class="fab fa-instagram fa-3x" target="new"></a>
     <!-- <div class="info-box">
     <div class="footnote">RUSLAN SPOYALO <span class="highlight">©2019</span></div>
     </div> -->
@@ -320,6 +321,7 @@
 <script>
 
 $(document).ready(function(){
+
 $('#recipeCarousel').carousel({
   interval: 10000
 })
@@ -344,7 +346,8 @@ $('.carousel .carousel-item').each(function(){
 });
 
 
-</script>     
+</script>   
+
 
 
 

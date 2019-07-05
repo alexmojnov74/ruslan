@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -17,10 +18,10 @@
 </head>
 <body>
 <!-- Navigation Bar -->
-<div class="container contnav">
+<div class="container contnav animated fadeInDown">
         <nav class="navbar navbar-expand-lg navbar-light">
     
-        <a class="navbar-brand navbrand" href="#">
+        <a class="navbar-brand navbrand" href="index.html">
             <img id="logo" class="d-inline-block img-fluid" alt="Logo" src="images/logo.jpg">
         </a>
     
@@ -51,7 +52,7 @@
 <!-- End Navigation Bar -->
 
 <!-- Main Content -->
-<div class="container">
+<div class="container animated fadeInUp">
     <div class="row">
     <div class="col-md-12">
         <div class="row">
@@ -75,9 +76,9 @@
         <br>
         <br>
          
-        <p>&#10026 Personal Portraits</p>
-        <p>&#10026 Family Photorgraphs</p>
-        <p>&#10026 Modeling and much more …</p>
+        <p>&NonBreakingSpace; &NonBreakingSpace; &#10026 &nbspPersonal Portraits</p>
+        <p>&NonBreakingSpace; &NonBreakingSpace; &#10026 &nbspFamily Photorgraphs</p>
+        <p>&NonBreakingSpace; &NonBreakingSpace; &#10026 &nbspModeling and much more …</p>
         
         </p>    
    
@@ -101,7 +102,7 @@
     <!-- <a href="https://twitter.com" target="new" class="fab fa-twitter"></a>
     <a href="http://facebook.com" target="new" class="fab fa-facebook fa-3x"></a>
     <a href="https://www.linkedin.com" target="new" class="fab fa-linkedin fa-3x"></a> -->
-    <a href="http://instagram.com" class="fab fa-instagram fa-3x"></a>
+    <a href="http://instagram.com" class="fab fa-instagram fa-3x" target="new"></a>
     <!-- <div class="info-box">
     <div class="footnote">RUSLAN SPOYALO <span class="highlight">©2019</span></div>
     </div> -->
@@ -119,30 +120,6 @@
 
     
 <script>
-
-$(document).ready(function(){
-$('#recipeCarousel').carousel({
-  interval: 5000
-})
-
-$('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-          next.children(':first-child').clone().appendTo($(this));
-      }
-    });
-});
 
 
 </script>     
