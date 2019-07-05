@@ -17,7 +17,7 @@
   .gallery-block.compact-gallery .item{
     overflow: hidden;
     margin-bottom: 0;
-    background: black;
+    background: white;
     opacity: 1;
   }
   
@@ -60,6 +60,11 @@
     margin-top: 10px;
     font-weight: 300;
   }
+  .image {
+    padding: 0px 0px 0px 5px;
+  }
+  
+  
   
   @media (min-width: 576px) {
   
