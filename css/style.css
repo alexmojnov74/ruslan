@@ -34,13 +34,16 @@ li {font-family: 'Heebo', sans-serif;
 
 .fluid {
     padding: 0px;
+    
 }
 .contnav {
-    padding-top: 2%;
+    padding-top: 5px;
     padding-bottom: 30px;
     padding-left: 0px;
     padding-right: 0px;
     text-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .colmd1 {
@@ -125,6 +128,9 @@ li {font-family: 'Heebo', sans-serif;
     -ms-transition: 1s;
     -o-transition: 1s;
 }
+.contgal {
+    margin-top: -50px;
+}
 
 /* MainStyles End */
 
@@ -142,7 +148,8 @@ li {font-family: 'Heebo', sans-serif;
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    margin: auto;  
+    margin: auto; 
+    
 }
 .navbar-light .navbar-toggler {
     margin-left: 42%;
