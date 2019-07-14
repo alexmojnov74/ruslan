@@ -250,26 +250,12 @@ li {font-family: 'Heebo', sans-serif;
     .fullscreen {
         display: none;
     }
-        /* displaying mobilescreen in mobile */
-        .mobilescreen {
-          display: unset;
+    /* displaying mobilescreen in mobile */
+    .mobilescreen {
+        display: unset;
     }
-    /* .carousel-inner .carousel-item > div:first-child {
-        display: flex;
-    }
-
-    
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-      -webkit-transform: translateX(25%);
-      -moz-transform: translateX(25%);
-      -ms-transform: translateX(25%);
-      -o-transform: translateX(25%);
-    } */
-    
-    
 }
+
 /* display 3 */
 @media only screen and (max-width: 850px) {
    
@@ -286,12 +272,11 @@ li {font-family: 'Heebo', sans-serif;
     .mobilescreen {
       display: unset;
     }
-    
     #logo {
         margin-left: 0px;
     }
-
 }
+
 @media only screen and (max-width: 650px) {
     .fullscreen {
         display: none;
