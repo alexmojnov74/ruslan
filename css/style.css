@@ -234,15 +234,10 @@ li {font-family: 'Heebo', sans-serif;
 
 
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     /* .carousel-inner .carousel-item > div {
         display: none;
     } */
-    
-    .carousel-inner .carousel-item > div:first-child {
-        display: flex;
-    }
-
     h3 {
         font-family: 'Cinzel', serif;
         font-size: 22px;
@@ -251,6 +246,19 @@ li {font-family: 'Heebo', sans-serif;
         padding: 0px 0px 10px 0px;
         margin-left: 17%; 
     }
+
+    .fullscreen {
+        display: none;
+    }
+        /* displaying mobilescreen in mobile */
+        .mobilescreen {
+          display: unset;
+    }
+    /* .carousel-inner .carousel-item > div:first-child {
+        display: flex;
+    }
+
+    
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(25%);
@@ -258,32 +266,12 @@ li {font-family: 'Heebo', sans-serif;
       -moz-transform: translateX(25%);
       -ms-transform: translateX(25%);
       -o-transform: translateX(25%);
-    }
-    .mobilescreen{
-    display: none;
-    }
+    } */
+    
     
 }
 /* display 3 */
-@media (max-width: 850px) {
-    
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-      -webkit-transform: translateX(25%);
-      -moz-transform: translateX(25%);
-      -ms-transform: translateX(25%);
-      -o-transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-      -webkit-transform: translateX(-25%);
-      -moz-transform: translateX(-25%);
-      -ms-transform: translateX(-25%);
-      -o-transform: translateX(-25%);
-    }
+@media only screen and (max-width: 850px) {
    
     .navbar-light .navbar-toggler {
     margin-left: 45%;
@@ -298,29 +286,26 @@ li {font-family: 'Heebo', sans-serif;
     .mobilescreen {
       display: unset;
     }
-    .col-md-12 {
-    padding: 0px 0px 0px 0px;
-
-    }
+    
     #logo {
         margin-left: 0px;
     }
 
 }
-@media (max-width: 650px) {
-    .carousel-inner .carousel-item.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-        display: inline;
+@media only screen and (max-width: 650px) {
+    .fullscreen {
+        display: none;
     }
+      /* displaying mobilescreen in mobile */
+      .mobilescreen {
+          display: unset;
+    }
+    
     h3 {
     font-family: 'Cinzel', serif;
     font-size: 22px;
     }
-
-    .mobilescreen{
-    display:none;
-    }
+    
     #logo {
         margin-left: 0px;
     }
@@ -335,9 +320,9 @@ li {font-family: 'Heebo', sans-serif;
     .mobilescreen {
         display: unset;
     }
-    /* .col-md-12 {
+    .col-md-12 {
         padding: 0px 0px 0px 0px;
-    } */
+    }
     .navbrand {
         font-family: 'Cinzel', serif;
         font-size: 210%; 
