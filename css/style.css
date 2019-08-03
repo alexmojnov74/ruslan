@@ -157,7 +157,7 @@ li {
     text-align: center;
 }
 
-.btn {
+.bt {
     font-family: 'Heebo', sans-serif;
     font-size: 20px; 
     width: 340px;
@@ -173,6 +173,10 @@ li {
 .card-title {
     text-align: center;
     padding-top: 10px;
+}
+.modal-footer {
+    text-align: center;
+    display: block;
 }
 
 /* MainStyles End */
