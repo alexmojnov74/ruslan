@@ -6,17 +6,21 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    padding-top: 10px;
-    
+    padding-top: 10px;   
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 50%;
 }
 
 h3 {
     font-family: 'Cinzel', serif;
     font-size: 25px;
 }
-
-h2 {font-family: 'Cinzel', serif;
-    font-size: 50%;
+h5 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 30px; 
 }
 
 p { 
@@ -25,7 +29,8 @@ p {
     line-height: 25px;
 }
 
-li {font-family: 'Heebo', sans-serif;
+li {
+    font-family: 'Heebo', sans-serif;
     text-align: justify;
     line-height: 25px;
 }
@@ -132,11 +137,48 @@ li {font-family: 'Heebo', sans-serif;
 .contgal {
     margin-top: -50px;
 }
+.modal {
+    opacity: 0.9;
+}
+
+.modhead {
+    background-color: red;
+    color: white;
+}
+.promo {
+    background-color: red;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+.modal-footer {
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px; 
+    width: 340px;
+    margin-top: 20px;
+    background-color: #444242;
+    border: none;
+}
+.crd {
+    border: 1px solid #444242;
+    padding: 5px;
+    margin-left: 5px;
+}
+.card-title {
+    text-align: center;
+    padding-top: 10px;
+}
 
 /* MainStyles End */
 
 /* Carusel */
-.card {
+.cd {
     border: none;
 }
 .card-body {
