@@ -165,6 +165,14 @@ li {
     background-color: #444242;
     border: none;
 }
+.bt1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px; 
+    width: 300px;
+    margin-top: 20px;
+    background-color: #444242;
+    border: none;
+}
 .crd {
     border: 1px solid #444242;
     padding: 5px;
