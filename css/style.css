@@ -160,7 +160,7 @@ li {
 .bt {
     font-family: 'Heebo', sans-serif;
     font-size: 20px; 
-    width: 340px;
+    width: 100%;
     margin-top: 20px;
     background-color: #444242;
     border: none;
