@@ -2,4 +2,4 @@
 
 This aaplication is based on plain HTML5 with the use of Bootstarp and some JavaScript for dynamic components.
 
-Link: https://spyalo.com
+Link: https://alexmojnov74.github.io/ruslan/
